@@ -75,10 +75,22 @@ export const App: React.FC = () => {
           height={'100vh'}
           backgroundColor='#9ACD32'
           justifyContent='center'
+          alignItems='center'
           flexWrap='wrap'
           >
-          <Text variant='secondary'>Adicione uma plantinha</Text>
-          <img src={gardening}  width={'500px'} height={'320px'}/>
+          <Container
+            width={[1]}
+            justifyContent='center'
+            alignItems='center'
+            >
+            <Text variant='secondary'>Adicione uma plantinha</Text>
+          </Container>
+          <Container
+            width={[1]}
+            justifyContent='center'
+            alignItems='center'>
+            <img src={gardening}  width={'500px'} height={'320px'}/>
+          </Container>
         </Container>
       </Container>
     </Wrapper>
