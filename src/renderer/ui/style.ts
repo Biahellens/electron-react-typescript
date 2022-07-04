@@ -9,9 +9,13 @@ import { BoxProps } from 'reflexbox'
 
 export const Wrapper = styled(Flex)`
   flex-wrap: wrap;
-  padding: 2rem;
 `
 
 export const Container = styled(Box)<BoxProps>`
-  position: relative;
+  display: flex;
+  margin: 0;
+`
+
+export const InputBox = styled(Box)<BoxProps>`
+  padding-Top: 1.2rem;
 `

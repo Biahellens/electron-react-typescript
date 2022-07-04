@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react"
 import { getDate } from "../../common/getDate"
 
-import styles from "./App.module.scss"
-import logo from "../public/logo192.png"
-
 //components
-import { Wrapper, Container } from "./style"
+import { Wrapper, Container, InputBox } from "./style"
+
+import { Button, Input, Text,TextArea } from '../../components'
+
+//imgs
+import gardening from '../../assets/images/gardening.svg'
 
 export const App: React.FC = () => {
 
@@ -18,7 +20,66 @@ export const App: React.FC = () => {
   return (
     <Wrapper>
       <Container>
-        <p>oi</p>
+        <Container
+          width={'100vh'}
+          height={'100vh'}
+          justifyContent='space-around'
+          alignContent='center'
+          flexWrap='wrap'
+          padding='2rem'
+          >
+
+            <InputBox>
+              <Text variant='input'>Nome</Text>
+              <Input/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>Tamanho</Text>
+              <Input variant='secondary'/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>Preço</Text>
+              <Input variant='secondary'/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>Dificuldade</Text>
+              <Input variant='secondary'/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>Categoria</Text>
+              <Input variant='secondary'/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>url da imagem</Text>
+              <Input variant='url'/>
+            </InputBox>
+
+            <InputBox>
+              <Text variant='input'>Descrição</Text>
+              <TextArea/>
+            </InputBox>
+
+            <Container>
+              <Button>
+                <Text>Adicionar</Text>
+              </Button>
+            </Container>
+        </Container>
+        <Container
+          width={'100vh'}
+          height={'100vh'}
+          backgroundColor='#9ACD32'
+          justifyContent='center'
+          flexWrap='wrap'
+          >
+          <Text variant='secondary'>Adicione uma plantinha</Text>
+          <img src={gardening}  width={'500px'} height={'320px'}/>
+        </Container>
       </Container>
     </Wrapper>
   )
