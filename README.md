@@ -1,30 +1,41 @@
 # electron-react-typescript
-Clone this repo to start a simple Electron app with React and Typescript.
+Esse é um fork do Teste Prático de implemtação em RPA. Dado que precisava ser algo relacionado a cadastro fiz um "cadatro de platinhas". 
 
-## Installation
+- [Electron-react-typescript](#electron-react-typescript)
+  - [Tecnologias](#tecnologias)
+  - [Inicializando](#inicializando)
+  - [License](#license)
+  
+  
+## Tecnologias
 
-Use yarn to install all dependencies.
+Para o desenvolvimento deste projeto, foi utilizado as seguintes tecnologias:
+
+- [Node](https://nodejs.org/en/);
+- [React](https://pt-br.reactjs.org/);
+- [Yarn](https://yarnpkg.com/);
+- [TypeScript](https://www.typescriptlang.org/);
+- [Electron](https://www.electronjs.org/pt/docs/latest/tutorial/boilerplates-and-clis).  
+
+## Inicializando
+Antes de iniciarmos, precisamos instalar as dependencias, para isso, vamos utilizar o yarn como nosso gerenciador de dependencias e executar o seguinte comando no terminal:
 
 ```bash
-yarn
+$ yarn install
 ```
 
-## Usage
-
-Run the `dev` script to start the project. It will reload with code changes.
+agora com o as dependencias instaladas, podemos estar inicializando com através do comando:
 
 ```bash
-yarn dev
+$ yarn start
 ```
-
-## Building
-
-Run the `build` script in order to generate the production build to the current OS: 
+ou
 
 ```bash
-yarn build
+$ yarn dev
 ```
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
